@@ -1,11 +1,11 @@
 import csv
 import glob
-from itertools import groupby
 import itertools
-from time import localtime
+from itertools import groupby
 import random
 import re
 import sys
+from time import localtime
 import unittest
 import xml.etree.ElementTree as etree
 
@@ -158,7 +158,8 @@ if __name__ == '__main__':
 
 # 14 lines: Doctest-based testing
 def median(pool):
-    """Statistical median to demonstrate doctest.
+    """
+    Statistical median to demonstrate doctest.
     >>> median([2, 9, 9, 7, 9, 2, 4, 5, 8])
     6 #change to 7 in order to pass the test
     """
