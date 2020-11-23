@@ -1,13 +1,13 @@
+import csv
+import glob
+from itertools import groupby
+import itertools
+from time import localtime
+import random
 import re
 import sys
-import glob
-from time import localtime
 import unittest
-from itertools import groupby
-import csv
-import itertools
 import xml.etree.ElementTree as etree
-import random
 
 
 # 1 line: Output
@@ -61,7 +61,8 @@ print('I owe the grocer $%.2f' % grocery_bill)
 
 
 # 8 lines: Command line arguments, exception handling
-# This program adds up integers that have been passed as arguments in the command line
+# This program adds up integers that have been passed
+# as arguments in the command line
 try:
     total = sum(int(arg) for arg in sys.argv[1:])
     print('sum =', total)
@@ -355,6 +356,7 @@ while guesses_made < 6:
         break
 
 if guess == number:
-    print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+    print('Good job, {0}! '
+          'You guessed my number in {1} guesses!'.format(name, guesses_made))
 else:
     print('Nope. The number I was thinking of was {0}'.format(number))
